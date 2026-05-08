@@ -1,0 +1,20 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "manifold-eval"
+version = "0.1.0"
+requires-python = ">=3.12"
+dependencies = [
+    "lm-eval[api,hf]",
+    "lmeval-framework[vertex]",
+    "python-dotenv",
+    "streamlit",
+]
+
+[project.scripts]
+manifold-eval-viewer = "manifold_eval.cli:viewer"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/manifold_eval"]

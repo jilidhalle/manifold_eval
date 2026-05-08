@@ -5,8 +5,8 @@ Small wrapper around EleutherAI LM Evaluation Harness with a project-level API:
 Install from Git:
 
 ```powershell
-pip install git+https://github.com/<user>/<repo>.git@<version>
-uv add git+https://github.com/<user>/<repo>.git@<version>
+pip install git+https://github.com/jilidhalle/manifold_eval.git@<version>
+uv add git+https://github.com/jilidhalle/manifold_eval.git@<version>
 ```
 
 ```python
